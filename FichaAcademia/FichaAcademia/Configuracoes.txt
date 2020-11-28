@@ -1,0 +1,18 @@
+﻿- Criacao do projeto padrao
+- Criação de 2 projetos dentro do projeto padrao
+	1- Gerenciamento das Models
+	2- Gerenciamento do Acesso as Dados
+
+	** Para Criar **
+		- Botao direito na Solucao > Adicionar ? Novo Projeto > Biblioteca de Classes [.NET CORE]
+		- Adicionar dependencias para o projeto
+			- Em FichaAcademia, Dependencias > botao direito > Adicionar Referencia > Escolher 
+
+- Criacao da Classe Contexto e inclusao na Startup
+- Importação de scripts
+- Criação da Navbar
+- Startup
+	- Importacao da Rotativa
+	- Configuração de Autenticacao e Sessoes
+
+

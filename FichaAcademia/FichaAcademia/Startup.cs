@@ -1,9 +1,14 @@
+using FichaAcademia.AcessoDados;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rotativa.AspNetCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,13 +25,28 @@ namespace FichaAcademia
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<Contexto>(opcoes => opcoes.UseSqlServer(Configuration.GetConnectionString("ConexaoDB")));
+
+            //Possibilitar usar Sessões
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            //Sessões
+            services.AddSession(opcoes =>
+            {
+               opcoes.IdleTimeout = TimeSpan.FromHours(1); //1h
+            });
+
+            //Autenticação
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(opcoes =>
+                {
+                    opcoes.LoginPath = "/Administradores/Login";
+                });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -36,9 +56,16 @@ namespace FichaAcademia
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            //Validando o uso de Sessão e Autenticacao
+            app.UseSession();
+            app.UseAuthentication();
+
+            //Rotativa
+            RotativaConfiguration.Setup(env.WebRootPath, "Rotativa");
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

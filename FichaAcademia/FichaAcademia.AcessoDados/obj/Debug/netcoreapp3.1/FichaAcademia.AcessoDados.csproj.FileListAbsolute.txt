@@ -1,0 +1,4 @@
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\Ficha_Academia\FichaAcademia\FichaAcademia.AcessoDados\bin\Debug\netcoreapp3.1\FichaAcademia.Dominio.dll
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\Ficha_Academia\FichaAcademia\FichaAcademia.AcessoDados\obj\Debug\netcoreapp3.1\FichaAcademia.AcessoDados.csprojAssemblyReference.cache
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\Ficha_Academia\FichaAcademia\FichaAcademia.AcessoDados\obj\Debug\netcoreapp3.1\FichaAcademia.AcessoDados.AssemblyInfoInputs.cache
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\Ficha_Academia\FichaAcademia\FichaAcademia.AcessoDados\obj\Debug\netcoreapp3.1\FichaAcademia.AcessoDados.AssemblyInfo.cs
