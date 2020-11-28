@@ -18,6 +18,6 @@ namespace FichaAcademia.Dominio.Models
         public int AlunoId { get; set; }
         public Aluno Aluno { get; set; }
 
-        public ICollection<ListaExercicio> ListaExercicos { get; set; }
+        public ICollection<ListaExercicio> ListaExercicios { get; set; }
     }
 }

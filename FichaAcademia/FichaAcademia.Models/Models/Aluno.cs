@@ -25,6 +25,9 @@ namespace FichaAcademia.Dominio.Models
         [Range(1, 7, ErrorMessage = "Frequencia inválida!")]
         public int FrequenciaSemanal { get; set; }
 
+        public int ObjetivoId { get; set; }
+        public Objetivo Objetivo { get; set; }
+
         public int ProfessorId { get; set; }
         public Professor Professor { get; set; }
 

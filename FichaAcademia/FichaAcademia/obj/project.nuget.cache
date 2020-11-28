@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ofApLq4AyLfDmB25Yi9xlzjTgLhbFKjIHW+Y5+uPDJJf364MCIMPjSuKj6ShQeoLgcJXQwgApUPL3vkb2ifKtg==",
+  "dgSpecHash": "TsDKZA+xcEjXe9Li55FZ327Gz/ut8jSJ5jcCXMT2VYZrjNEhLOzvis2ce8vcAXAV15/brP43cCqBK5gNVJTBHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\Ficha_Academia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.0.1\\microsoft.aspnetcore.antiforgery.2.0.1.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.0.1\\microsoft.aspnetcore.authentication.abstractions.2.0.1.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.0.1\\microsoft.aspnetcore.authentication.core.2.0.1.nupkg.sha512",
@@ -55,6 +56,7 @@
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0\\microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
     "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
