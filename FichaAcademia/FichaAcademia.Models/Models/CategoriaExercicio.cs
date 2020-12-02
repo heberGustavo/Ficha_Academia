@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using System.Web.Mvc;
 
 namespace FichaAcademia.Dominio.Models
 {
@@ -11,6 +12,7 @@ namespace FichaAcademia.Dominio.Models
         
         [Required(ErrorMessage = "Campo obrigatório!")]
         [StringLength(50, ErrorMessage = "Use menos caracteres!")]
+        [Remote("CategoriaExiste", "CategoriasExercicios", AdditionalFields = "CategoriaExercicioId")]
         public string Nome { get; set; }
 
         //Lista
