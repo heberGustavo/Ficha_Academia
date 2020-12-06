@@ -35,6 +35,7 @@ namespace FichaAcademia
 
             //Repositorios
             services.AddTransient<ICategoriaExercicioRepositorio, CategoriaExercicioRepositorio>();
+            services.AddTransient<IAdministradorRepositorio, AdministradorRepositorio>();
 
             //Possibilitar usar Sessões
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -86,7 +87,7 @@ namespace FichaAcademia
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=CategoriasExercicios}/{action=Index}/{id?}");
+                    pattern: "{controller=Administradores}/{action=Login}/{id?}");
             });
         }
     }
