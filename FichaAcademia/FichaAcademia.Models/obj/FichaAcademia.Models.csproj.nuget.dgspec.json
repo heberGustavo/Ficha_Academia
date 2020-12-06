@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\Ficha_Academia\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj": {}
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\Ficha_Academia\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj": {
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\Ficha_Academia\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj",
         "projectName": "FichaAcademia.Models",
-        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\Ficha_Academia\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\FichaAcademia\\FichaAcademia.Models\\FichaAcademia.Models.csproj",
         "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\Ficha_Academia\\FichaAcademia\\FichaAcademia.Models\\obj\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\FichaAcademia\\FichaAcademia.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,0 +1,4 @@
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\FichaAcademia\FichaAcademia.Models\obj\Debug\netcoreapp3.1\FichaAcademia.Models.csprojAssemblyReference.cache
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\FichaAcademia\FichaAcademia.Models\obj\Debug\netcoreapp3.1\FichaAcademia.Models.AssemblyInfoInputs.cache
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\FichaAcademia\FichaAcademia.Models\obj\Debug\netcoreapp3.1\FichaAcademia.Models.AssemblyInfo.cs
+C:\Users\Heber Gustavo\OneDrive\Área de Trabalho\FichaAcademia\FichaAcademia.Models\obj\Debug\netcoreapp3.1\FichaAcademia.Models.csproj.CoreCompileInputs.cache

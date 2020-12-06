@@ -15,16 +15,16 @@ namespace FichaAcademia.AcessoDados.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
+                .HasAnnotation("ProductVersion", "3.1.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("FichaAcademia.Dominio.Models.Administrador", b =>
                 {
                     b.Property<int>("AdministradoresId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -48,7 +48,7 @@ namespace FichaAcademia.AcessoDados.Migrations
                     b.Property<int>("AlunoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("FrequenciaSemanal")
                         .HasColumnType("int");
@@ -58,8 +58,8 @@ namespace FichaAcademia.AcessoDados.Migrations
 
                     b.Property<string>("NomeCompleto")
                         .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
 
                     b.Property<int>("ObjetivoId")
                         .HasColumnType("int");
@@ -84,12 +84,12 @@ namespace FichaAcademia.AcessoDados.Migrations
                     b.Property<int>("CategoriaExercicioId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("CategoriaExercicioId");
 
@@ -101,15 +101,15 @@ namespace FichaAcademia.AcessoDados.Migrations
                     b.Property<int>("ExercicioId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("CategoriaExercicioId")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("ExercicioId");
 
@@ -123,7 +123,7 @@ namespace FichaAcademia.AcessoDados.Migrations
                     b.Property<int>("FichaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("AlunoId")
                         .HasColumnType("int");
@@ -133,8 +133,8 @@ namespace FichaAcademia.AcessoDados.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<DateTime>("Validade")
                         .HasColumnType("datetime2");
@@ -151,7 +151,7 @@ namespace FichaAcademia.AcessoDados.Migrations
                     b.Property<int>("ListaExercicioId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("Carga")
                         .HasColumnType("int");
@@ -182,17 +182,17 @@ namespace FichaAcademia.AcessoDados.Migrations
                     b.Property<int>("ObjetivoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.HasKey("ObjetivoId");
 
@@ -204,7 +204,7 @@ namespace FichaAcademia.AcessoDados.Migrations
                     b.Property<int>("ProfessorId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Foto")
                         .IsRequired()
@@ -212,8 +212,8 @@ namespace FichaAcademia.AcessoDados.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("Telefone")
                         .IsRequired()
@@ -221,8 +221,8 @@ namespace FichaAcademia.AcessoDados.Migrations
 
                     b.Property<string>("Turno")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("nvarchar(15)")
+                        .HasMaxLength(15);
 
                     b.HasKey("ProfessorId");
 
@@ -242,10 +242,6 @@ namespace FichaAcademia.AcessoDados.Migrations
                         .HasForeignKey("ProfessorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Objetivo");
-
-                    b.Navigation("Professor");
                 });
 
             modelBuilder.Entity("FichaAcademia.Dominio.Models.Exercicio", b =>
@@ -255,8 +251,6 @@ namespace FichaAcademia.AcessoDados.Migrations
                         .HasForeignKey("CategoriaExercicioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("CategoriaExercicio");
                 });
 
             modelBuilder.Entity("FichaAcademia.Dominio.Models.Ficha", b =>
@@ -266,8 +260,6 @@ namespace FichaAcademia.AcessoDados.Migrations
                         .HasForeignKey("AlunoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Aluno");
                 });
 
             modelBuilder.Entity("FichaAcademia.Dominio.Models.ListaExercicio", b =>
@@ -283,40 +275,6 @@ namespace FichaAcademia.AcessoDados.Migrations
                         .HasForeignKey("FichaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Exercicio");
-
-                    b.Navigation("Ficha");
-                });
-
-            modelBuilder.Entity("FichaAcademia.Dominio.Models.Aluno", b =>
-                {
-                    b.Navigation("Fichas");
-                });
-
-            modelBuilder.Entity("FichaAcademia.Dominio.Models.CategoriaExercicio", b =>
-                {
-                    b.Navigation("Exercicios");
-                });
-
-            modelBuilder.Entity("FichaAcademia.Dominio.Models.Exercicio", b =>
-                {
-                    b.Navigation("ListaExercicios");
-                });
-
-            modelBuilder.Entity("FichaAcademia.Dominio.Models.Ficha", b =>
-                {
-                    b.Navigation("ListaExercicios");
-                });
-
-            modelBuilder.Entity("FichaAcademia.Dominio.Models.Objetivo", b =>
-                {
-                    b.Navigation("Alunos");
-                });
-
-            modelBuilder.Entity("FichaAcademia.Dominio.Models.Professor", b =>
-                {
-                    b.Navigation("Alunos");
                 });
 #pragma warning restore 612, 618
         }

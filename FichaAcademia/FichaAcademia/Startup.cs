@@ -27,6 +27,7 @@ namespace FichaAcademia
 
         public IConfiguration Configuration { get; }
 
+        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
@@ -41,7 +42,7 @@ namespace FichaAcademia
             //Sessões
             services.AddSession(opcoes =>
             {
-               opcoes.IdleTimeout = TimeSpan.FromHours(1); //1h
+                opcoes.IdleTimeout = TimeSpan.FromHours(1); //1h
             });
 
             //Autenticação
