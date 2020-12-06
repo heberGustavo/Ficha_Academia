@@ -51,6 +51,9 @@ namespace FichaAcademia
                 {
                     opcoes.LoginPath = "/Administradores/Login";
                 });
+
+            //Execução em Tempo Real
+            services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -83,7 +86,7 @@ namespace FichaAcademia
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=CategoriasExercicios}/{action=Index}/{id?}");
             });
         }
     }
